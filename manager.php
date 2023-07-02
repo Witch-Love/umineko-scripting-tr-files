@@ -20,7 +20,6 @@ function main($argc, $argv) {
 	switch ($argv[1]) {
 		case 'genhash':
 			if ($argc < 3) return;
-			if (!file_exists($argv[2])) err('No such file '.$argv[2]);
 
 			$hashes = [];
 			hashDir($argv[3], $argv[3], $hashes, 'size');
