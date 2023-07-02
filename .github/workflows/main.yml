@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+
+      - name: Compile
+        run: |
+          BUILD=$(($(git rev-list --count --first-parent HEAD)+3500))
+          TODAY=$(date +"%d.%m.%y")
+          echo "BUILD=${BUILD}" >> "$GITHUB_ENV"
+          echo "TODAY=${TODAY}" >> "$GITHUB_ENV"
+          echo "Build number ${BUILD}"
+          mkdir -p out
+          php manager.php genhash files/locale_tr_game.hash "files/"
+          cd files
+          zip -qry ../out/umineko-tr-files_r${BUILD}.zip * || exit 1
+          cd ../
+          echo "Açıklama belirtilmedi" >> release_notes.md
+
+      - name: Release
+        if: github.repository_owner == 'Witch-Love'
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: z${{ env.BUILD }}
+          release_name: Umineko Witch Love Files r${{ env.BUILD }}
+          body_path: release_notes.md
+          draft: false
+          prerelease: false
+
+      - name: Upload TR Files
+        if: github.repository_owner == 'Witch-Love'
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./out/umineko-tr-files_r${{ env.BUILD }}.zip
+          asset_name: umineko-tr-files_r${{ env.BUILD }}.zip
+          asset_content_type: application/zip
