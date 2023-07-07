@@ -18,6 +18,7 @@ jobs:
       - name: Compile
         run: |
           BUILD=$(($(git rev-list --count --first-parent HEAD)+3500))
+          VERSION=$(($(git rev-list --count --first-parent HEAD)))
           TODAY=$(date +"%d.%m.%y")
           echo "BUILD=${BUILD}" >> "$GITHUB_ENV"
           echo "TODAY=${TODAY}" >> "$GITHUB_ENV"
@@ -63,3 +64,12 @@ jobs:
           asset_path: ./out/locale_tr_game.hash
           asset_name: locale_tr_game.hash
           asset_content_type: text/plain
+
+      - name: Trigger new scripts build
+        if: github.repository_owner == 'Witch-Love'
+        run: |
+          curl -H "Accept: application/vnd.github.everest-preview+json" \
+          -H "Authorization: token ${{ secrets.ACTIONS_KEY }}" \
+          --request POST \
+          --data '{"event_type": "Trigger new scripts build"}' \
+          https://api.github.com/repos/Witch-Love/umineko-scripting-tr/dispatches
