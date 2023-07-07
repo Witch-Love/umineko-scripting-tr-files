@@ -23,7 +23,7 @@ jobs:
           echo "TODAY=${TODAY}" >> "$GITHUB_ENV"
           echo "Build number ${BUILD}"
           mkdir -p out
-          php manager.php genhash files/locale_tr_game.hash "files/"
+          php manager.php genhash out/locale_tr_game.hash "files/"
           cd files
           zip -qry ../out/umineko-tr-files_r${BUILD}.zip * || exit 1
           cd ../
@@ -52,3 +52,14 @@ jobs:
           asset_path: ./out/umineko-tr-files_r${{ env.BUILD }}.zip
           asset_name: umineko-tr-files_r${{ env.BUILD }}.zip
           asset_content_type: application/zip
+
+      - name: Upload TR Hash File
+        if: github.repository_owner == 'Witch-Love'
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ./out/locale_tr_game.hash
+          asset_name: locale_tr_game.hash
+          asset_content_type: text/plain
