@@ -28,7 +28,7 @@ jobs:
           cd files
           zip -qry ../out/umineko-tr-files_r${BUILD}.zip * || exit 1
           cd ../
-          echo "Kurulum detayları için [buraya](https://github.com/Witch-Love/umineko-scripting-tr#kurulum) bakın." >> release_notes.md
+          echo "Kurulum detayları için [buraya](https://github.com/Witch-Love/umineko-scripting-tr/tree/master/INSTALLATION.md) bakın." >> release_notes.md
 
       - name: Release
         if: github.repository_owner == 'Witch-Love'
@@ -51,7 +51,7 @@ jobs:
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
           asset_path: ./out/umineko-tr-files_r${{ env.BUILD }}.zip
-          asset_name: umineko-tr-files_r${{ env.BUILD }}.zip
+          asset_name: umineko-tr-files.zip
           asset_content_type: application/zip
 
       - name: Upload TR Hash File
