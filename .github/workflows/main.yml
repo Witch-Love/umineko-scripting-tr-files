@@ -30,7 +30,7 @@ jobs:
           cd ../files
           zip -qry ../out/umineko-tr-files_r${BUILD}.zip * || exit 1
           cd ..
-          echo "Kurulum detayları için [buraya](https://witch-love.github.io/wiki/umineko/installation) bakınız." >> release_notes.md
+          echo "Kurulum detayları için [buraya](https://witch-love.com/wiki/umineko/installation) bakınız." >> release_notes.md
 
       - name: Release
         if: github.repository_owner == 'Witch-Love'
