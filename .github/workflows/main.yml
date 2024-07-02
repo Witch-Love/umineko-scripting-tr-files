@@ -25,9 +25,7 @@ jobs:
           echo "Build number ${BUILD}"
           mkdir -p out
           php manager.php genhash out/locale_tr_game.hash "files/"
-          cd extra
-          cp -r * "../files/"
-          cd ../files
+          cd files
           zip -qry ../out/umineko-tr-files_r${BUILD}.zip * || exit 1
           cd ..
           echo "Kurulum detayları için [buraya](https://witch-love.com/wiki/umineko/installation) bakınız." >> release_notes.md
