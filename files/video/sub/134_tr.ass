@@ -28,7 +28,7 @@ Style: Translation,Arno Pro,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:11.03,0:00:16.24,Translation,,0,0,0,,Eğer aşk orada olsaydı,
-Dialogue: 0,0:00:16.24,0:00:21.62,Translation,,0,0,0,,görülmesi imkansız olduğu düşünülen pek çok gelecek olurdu
+Dialogue: 0,0:00:16.24,0:00:21.62,Translation,,0,0,0,,görülmesi imkânsız olduğu düşünülen pek çok gelecek olurdu
 Dialogue: 0,0:00:21.62,0:00:26.83,Translation,,0,0,0,,Korkacak hiçbir şey yok
 Dialogue: 0,0:00:26.83,0:00:32.30,Translation,,0,0,0,,Çünkü yakında bir kakera var
 Dialogue: 0,0:00:32.30,0:00:37.60,Translation,,0,0,0,,Her şeyi yok et, bu dünyayı yok et
