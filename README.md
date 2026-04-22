@@ -1,5 +1,7 @@
 # Witch Love ~ Umineko Türkçe Çeviri Projesi
 
-Bu repo oyunun Türkçe dosyalarını (grafiklerini vs.) barındırır.
+Bu repo oyunun Türkçe grafik dosyalarını barındırır.
 
-Detaylı kuruluma [buradan](https://witch-love.com/umineko/installation) ulaşabilirsiniz.
+Umineko Project üzerine yaptığımız bu Türkçe çeviri projemiz tamamen açık kaynak olmakla birlikte dışarıdan gelen tüm katkılara da açıktır. Acele çeviri yapmak yerine kaliteli çeviri yapmak önceliğimiz. Katkıda bulunmak istiyorsanız lütfen başlamadan önce sitemizi inceleyin!
+
+Detaylı kurulum adımlarına [sitemizden](https://witch-love.com/) ulaşabilirsiniz.

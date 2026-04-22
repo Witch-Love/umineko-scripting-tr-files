@@ -29,12 +29,12 @@ Style: Translation,Arno Pro,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
 Dialogue: 0,0:00:15.16,0:00:19.03,Translation,,0,0,0,,Dünyanın dört bir yanına dağılmış küreler
-Dialogue: 0,0:00:19.03,0:00:22.20,Translation,,0,0,0,,Görülerek fark edilmeyenler
+Dialogue: 0,0:00:19.03,0:00:22.20,Translation,,0,0,0,,Görülerek algılanamayanlar
 Dialogue: 0,0:00:22.20,0:00:26.24,Translation,,0,0,0,,Formsuz gözlemci
 Dialogue: 0,0:00:26.24,0:00:28.51,Translation,,0,0,0,,tüm bilgiye erişir
-Dialogue: 0,0:00:28.51,0:00:31.28,Translation,,0,0,0,,Tekrar eden bir sarkaç
-Dialogue: 0,0:00:31.28,0:00:35.51,Translation,,0,0,0,,Sadece biraz saf olmayan bir motivasyon
-Dialogue: 0,0:00:35.51,0:00:41.62,Translation,,0,0,0,,Hayat ağacının meyvesi yere düştü
+Dialogue: 0,0:00:28.51,0:00:31.28,Translation,,0,0,0,,Sallanıp duran bir sarkaç
+Dialogue: 0,0:00:31.28,0:00:35.51,Translation,,0,0,0,,Sadece biraz saf olmayan bir motive
+Dialogue: 0,0:00:35.51,0:00:41.62,Translation,,0,0,0,,Yaşam ağacının meyvesi yere düştü
 Dialogue: 0,0:00:41.62,0:00:48.29,Translation,,0,0,0,,Eğer büyü gibi gizemli olan bu çılgın ritüel,
 Dialogue: 0,0:00:48.29,0:00:54.07,Translation,,0,0,0,,büyülü bir çember çizen bir fırça darbesiyle başarılı olabilirse,
 Dialogue: 0,0:00:54.07,0:00:57.80,Translation,,0,0,0,,dünyayı inkâr edeceğim
