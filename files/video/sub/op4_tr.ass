@@ -26,12 +26,12 @@ Style: Translation,Arno Pro,40,&H00FFFFFF,&H000000FF,&H00000000,&H00000000,0,0,0
 
 [Events]
 Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
-Dialogue: 0,0:00:28.97,0:00:32.14,Translation,,0,0,0,,Boş bir rüya
-Dialogue: 0,0:00:32.14,0:00:35.11,Translation,,0,0,0,,Belli belirsiz bir arzu
+Dialogue: 0,0:00:28.97,0:00:32.14,Translation,,0,0,0,,İçi boş bir rüya
+Dialogue: 0,0:00:32.14,0:00:35.11,Translation,,0,0,0,,Muğlak bir dürtü
 Dialogue: 0,0:00:35.11,0:00:39.28,Translation,,0,0,0,,Kanla dolup taşmanın zevki
-Dialogue: 0,0:00:39.28,0:00:42.12,Translation,,0,0,0,,Arzu edilen serbest bırakılma
+Dialogue: 0,0:00:39.28,0:00:42.12,Translation,,0,0,0,,Arzu edilen özgürleşme
 Dialogue: 0,0:00:42.12,0:00:48.46,Translation,,0,0,0,,Mistik uyanışın o anı
-Dialogue: 0,0:00:48.46,0:00:54.90,Translation,,0,0,0,,Sıcak akan çarpık ardıl görüntüler
+Dialogue: 0,0:00:48.46,0:00:54.90,Translation,,0,0,0,,Sıcakça yayılan çarpık ardıl görüntüler
 Dialogue: 0,0:00:54.90,0:00:58.07,Translation,,0,0,0,,İki elimle gözlerimi kapatıp
 Dialogue: 0,0:00:58.07,0:01:02.34,Translation,,0,0,0,,tüm ışığı kestikten sonra
 Dialogue: 0,0:01:02.34,0:01:05.61,Translation,,0,0,0,,Senin sesini arayacağım
@@ -43,5 +43,5 @@ Dialogue: 0,0:01:20.13,0:01:23.56,Translation,,0,0,0,,Mantık ötesi kararlar
 Dialogue: 0,0:01:23.56,0:01:26.93,Translation,,0,0,0,,Günahlarının bedelini ödemesi için,
 Dialogue: 0,0:01:26.93,0:01:29.67,Translation,,0,0,0,,karanlık nefesini tutmuş bekliyor
 Dialogue: 0,0:01:29.67,0:01:36.61,Translation,,0,0,0,,Güzelliğin kapısından geçenler tarafından imzalanan sözleşme
-Dialogue: 0,0:01:36.61,0:01:40.05,Translation,,0,0,0,,Pırpır, pırpır, kelebek çağırıyor
+Dialogue: 0,0:01:36.61,0:01:40.05,Translation,,0,0,0,,Pırpır pırpır, kelebek çağırıyor
 Dialogue: 0,0:01:40.05,0:01:46.95,Translation,,0,0,0,,Yakında çığlıklar yerini sessizliğe bırakacak
